@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lovable AI - Image Upload</title>
+</head>
+<body>
+  <h1>Upload an Image to See What Your AI Thinks!</h1>
+
+  <!-- Image upload form -->
+  <input type="file" id="uploadImage" accept="image/*">
+  <br><br>
+
+  <canvas id="canvas" style="display: none;"></canvas>
+
+  <h2 id="predictionResult">Prediction will be displayed here</h2>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-models"></script>
+  <script src="script.js"></script>
+</body>
+</html>
