@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lovable AI - Image Upload Prediction</title>
+  
+  <!-- Include TensorFlow.js and Teachable Machine library -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
 </head>
 <body>
   <h1>Upload an Image and Let AI Predict!</h1>
@@ -17,9 +21,7 @@
   <!-- Display Prediction Result -->
   <pre id="predictionResult"></pre>
 
-  <!-- TensorFlow.js and Teachable Machine JS -->
-  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+  <!-- Include the custom script.js file -->
   <script src="script.js"></script>
 </body>
 </html>
