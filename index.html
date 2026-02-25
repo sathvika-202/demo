@@ -3,21 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lovable AI - Image Upload</title>
+  <title>Lovable AI - Image Upload Prediction</title>
 </head>
 <body>
-  <h1>Upload an Image to See What Your AI Thinks!</h1>
+  <h1>Upload an Image and Let AI Predict!</h1>
 
-  <!-- Image upload form -->
+  <!-- Image Upload Input -->
   <input type="file" id="uploadImage" accept="image/*">
-  <br><br>
+  
+  <!-- Canvas for drawing image (hidden) -->
+  <canvas id="canvas" style="display:none;"></canvas>
+  
+  <!-- Display Prediction Result -->
+  <pre id="predictionResult"></pre>
 
-  <canvas id="canvas" style="display: none;"></canvas>
-
-  <h2 id="predictionResult">Prediction will be displayed here</h2>
-
+  <!-- TensorFlow.js and Teachable Machine JS -->
   <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-models"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
